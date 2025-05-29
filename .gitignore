@@ -1,0 +1,28 @@
+# Arquivos e pastas do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de distribuição/empacotamento
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Arquivos do PyInstaller
+*.spec
+
+# Arquivos de ambiente virtual
+venv/
+env/
+ENV/
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db 
