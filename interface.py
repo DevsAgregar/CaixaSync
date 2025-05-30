@@ -67,7 +67,6 @@ class MainWindow(QWidget):
                 border-radius: 0px;
                 font-size: 14px;
                 text-align: center;
-                qproperty-alignment: AlignCenter;
             }}
             QPushButton#closeButton {{
                 background-color: transparent;
@@ -80,7 +79,6 @@ class MainWindow(QWidget):
                 border-radius: 0px;
                 font-size: 12px;
                 text-align: center;
-                qproperty-alignment: AlignCenter;
             }}
             QPushButton#windowButton:hover {{
                 background-color: {CORES['fundo_secundario']};
