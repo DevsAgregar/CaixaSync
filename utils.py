@@ -2,21 +2,35 @@ import re
 import pandas as pd
 from typing import Union, Optional
 
-def extrair_loja(documento: str) -> str:
+def extrair_loja(usuario: str) -> str:
     """
-    Extrai o número da loja do documento no formato LJxx.
+    Determina a loja com base no usuário.
     
     Args:
-        documento: String contendo o número da loja
+        usuario: Nome do usuário que fez a movimentação
         
     Returns:
         String formatada 'Loja X' ou string vazia se não encontrar
     """
-    if not documento:
+    print(f"\nExtraindo loja para usuário: '{usuario}'")
+    if not usuario:
+        print("Usuário vazio, retornando string vazia")
         return ''
-    match = re.search(r'LJ(\d{2})', str(documento))
-    if match:
-        return f'Loja {int(match.group(1))}'
+    
+    usuario = str(usuario).lower().strip()
+    print(f"Usuário normalizado: '{usuario}'")
+    
+    if 'jozimara' in usuario:
+        print("Usuário contém jozimara -> Loja 1")
+        return 'Loja 1'
+    elif 'neide' in usuario:
+        print("Usuário contém neide -> Loja 1")
+        return 'Loja 1'
+    elif 'geizy' in usuario:
+        print("Usuário contém geizy -> Loja 2")
+        return 'Loja 2'
+    
+    print(f"Usuário não reconhecido: '{usuario}' -> retornando string vazia")
     return ''
 
 def normalizar_filial(filial: str, padrao: str = r'Loja\s*0?(\d+)') -> str:
