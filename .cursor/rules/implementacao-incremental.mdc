@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Implementação Incremental
+
+## Princípios Básicos
+- Sempre implemente uma funcionalidade por vez
+- Divida prompts grandes em partes menores e gerenciáveis
+- Confirme o escopo antes de gerar código
+- Mantenha o foco em uma única responsabilidade por vez
+
+## Processo Recomendado
+1. **Análise do Escopo**
+   - Entenda completamente o que precisa ser implementado
+   - Identifique as dependências e requisitos
+   - Defina os critérios de aceitação
+
+2. **Divisão em Partes**
+   - Quebre funcionalidades grandes em sub-tarefas
+   - Priorize as tarefas por dependência
+   - Mantenha cada parte focada e coesa
+
+3. **Implementação**
+   - Implemente uma parte por vez
+   - Teste cada parte antes de prosseguir
+   - Documente as mudanças realizadas
+
+4. **Revisão**
+   - Verifique se a implementação atende aos requisitos
+   - Confirme que não há efeitos colaterais indesejados
+   - Valide a integração com o código existente
+
+## Benefícios
+- Código mais fácil de manter e testar
+- Menor probabilidade de bugs
+- Melhor compreensão do código
+- Facilita a revisão e aprovação de mudanças
+
+## Exemplos de Boas Práticas
+- Implementar autenticação antes de funcionalidades protegidas
+- Criar modelos de dados antes de implementar regras de negócio
+- Desenvolver APIs antes de implementar interfaces
+- Implementar validações antes de processamento de dados
+

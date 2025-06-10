@@ -1,0 +1,64 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Padrão de Commits
+
+## Formato Básico
+```
+<tipo>: [descrição]
+```
+
+## Tipos de Commit
+- `feat`: Nova funcionalidade
+- `fix`: Correção de bug
+- `docs`: Alterações na documentação
+- `style`: Formatação, ponto e vírgula, etc; sem alteração de código
+- `refactor`: Refatoração de código
+- `test`: Adição ou modificação de testes
+- `chore`: Atualização de tarefas que não afetam o código
+
+## Exemplos de Mensagens
+- `feat: [adiciona] autenticação com Google`
+- `fix: [corrige] validação de email`
+- `docs: [atualiza] README com novas instruções`
+- `style: [formata] código seguindo padrão PSR-12`
+- `refactor: [extrai] lógica de validação para classe separada`
+- `test: [adiciona] testes para validação de CPF`
+- `chore: [atualiza] dependências do projeto`
+
+## Regras
+1. **Uma Tarefa = Um Commit**
+   - Cada commit deve representar uma única mudança lógica
+   - Evite misturar diferentes tipos de alterações no mesmo commit
+
+2. **Mensagens Claras**
+   - Use verbos no imperativo
+   - Seja específico e conciso
+   - Evite mensagens genéricas como "updates" ou "fixes"
+
+3. **Estrutura da Mensagem**
+   - Primeira linha: tipo e descrição
+   - Linhas adicionais (opcional): detalhes da mudança
+   - Exemplo:
+     ```
+     feat: [implementa] sistema de notificações
+     
+     - Adiciona classe NotificationService
+     - Implementa envio de emails
+     - Configura templates de notificação
+     ```
+
+4. **Boas Práticas**
+   - Faça commits frequentes
+   - Mantenha as mensagens em português
+   - Use colchetes para especificar a ação ou problema
+   - Evite mensagens muito longas
+
+## Benefícios
+- Histórico de commits mais organizado
+- Facilita a revisão de código
+- Melhora a rastreabilidade das mudanças
+- Simplifica a geração de changelog
+

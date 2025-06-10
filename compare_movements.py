@@ -43,6 +43,8 @@ def conta_bancaria(fp, filial):
             return "MAQUINETA ÚNICA"
         elif fp == "Cartão de Débito ELO":
             return "MAQUINETA ÚNICA"
+        elif fp == "Cartão de Crédito ELO":
+            return "MAQUINETA ÚNICA"
         
     elif filial == "Loja 2":
         if fp == "Dinheiro":
@@ -54,6 +56,8 @@ def conta_bancaria(fp, filial):
         elif fp in ["Cartão de Débito VISA/ MASTER", "Cartão de Crédito VISA / MASTER"]:
             return "MAQUINETA ÚNICA"
         elif fp == "Cartão de Débito ELO":
+            return "MAQUINETA ÚNICA"
+        elif fp == "Cartão de Crédito ELO":
             return "MAQUINETA ÚNICA"
     return ""
 

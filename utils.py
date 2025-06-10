@@ -29,6 +29,9 @@ def extrair_loja(usuario: str) -> str:
     elif 'geizy' in usuario:
         print("Usuário contém geizy -> Loja 2")
         return 'Loja 2'
+    elif 'amanda' in usuario:
+        print("Usuário contém amanda -> Loja 2")
+        return 'Loja 2'
     
     print(f"Usuário não reconhecido: '{usuario}' -> retornando string vazia")
     return ''
@@ -66,15 +69,24 @@ def parse_valor(valor: Union[str, int, float]) -> float:
     if isinstance(valor, (int, float)):
         return float(valor)
     
-    valor_str = str(valor).replace('R$', '').replace(' ', '')
+    valor_str = str(valor).strip()
     
     # Se tiver vírgula, formato brasileiro
     if ',' in valor_str:
+        # Remove pontos de milhar e troca vírgula por ponto
         valor_str = valor_str.replace('.', '').replace(',', '.')
-        
+    
     try:
         return float(valor_str)
-    except Exception:
+    except ValueError:
+        # Se falhar, tenta remover caracteres não numéricos
+        import re
+        numeros = re.findall(r'-?\d*\.?\d+', valor_str)
+        if numeros:
+            try:
+                return float(numeros[0])
+            except ValueError:
+                return 0.0
         return 0.0
 
 def sanitizar_nome_arquivo(nome: str) -> str:

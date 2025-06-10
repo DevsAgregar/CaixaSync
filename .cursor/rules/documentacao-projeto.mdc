@@ -1,0 +1,174 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Documentação do Projeto
+
+## README.md
+
+### Estrutura Obrigatória
+```markdown
+# Nome do Projeto
+
+## Descrição
+Breve descrição do projeto e seu propósito.
+
+## Funcionalidades
+- Lista detalhada de todas as funcionalidades
+- Incluir exemplos de uso quando relevante
+- Documentar configurações necessárias
+
+## Instalação
+```bash
+# Comandos de instalação
+```
+
+## Configuração
+- Variáveis de ambiente necessárias
+- Arquivos de configuração
+- Permissões necessárias
+
+## Uso
+Exemplos de código e casos de uso
+
+## Contribuição
+Instruções para contribuição
+
+## Licença
+Informações sobre licença
+```
+
+### Regras para Novas Funcionalidades
+1. **Documentação Imediata**
+   - Atualizar README.md antes do merge
+   - Incluir exemplos de uso
+   - Documentar dependências
+
+2. **Formato da Documentação**
+   - Usar Markdown
+   - Incluir exemplos de código
+   - Adicionar screenshots quando relevante
+
+3. **Seções Obrigatórias**
+   - Descrição da funcionalidade
+   - Requisitos
+   - Como usar
+   - Exemplos
+   - Limitações conhecidas
+
+## CHANGELOG.md
+
+### Formato
+```markdown
+# Changelog
+
+## [Versão] - YYYY-MM-DD
+### Adicionado
+- Novas funcionalidades
+
+### Alterado
+- Mudanças em funcionalidades existentes
+
+### Corrigido
+- Correções de bugs
+
+### Removido
+- Funcionalidades removidas
+
+### Segurança
+- Atualizações de segurança
+```
+
+### Regras para Atualização
+1. **Formato das Entradas**
+   - Usar verbos no passado
+   - Ser específico e conciso
+   - Incluir referências a issues/PRs
+
+2. **Categorias**
+   - Adicionado: novas funcionalidades
+   - Alterado: mudanças em funcionalidades existentes
+   - Corrigido: correções de bugs
+   - Removido: funcionalidades removidas
+   - Segurança: atualizações de segurança
+
+3. **Versionamento**
+   - Seguir [SemVer](mdc:https:/semver.org)
+   - Incluir data da versão
+   - Manter histórico completo
+
+## Processo de Documentação
+
+### 1. Nova Funcionalidade
+1. Atualizar README.md
+   - Adicionar descrição
+   - Incluir exemplos
+   - Documentar configurações
+
+2. Atualizar CHANGELOG.md
+   - Adicionar na seção "Adicionado"
+   - Incluir data da versão
+   - Referenciar issues/PRs
+
+### 2. Correção de Bug
+1. Atualizar CHANGELOG.md
+   - Adicionar na seção "Corrigido"
+   - Descrever o problema
+   - Referenciar issues/PRs
+
+### 3. Breaking Changes
+1. Atualizar README.md
+   - Documentar mudanças
+   - Atualizar exemplos
+   - Notificar usuários
+
+2. Atualizar CHANGELOG.md
+   - Adicionar na seção "Alterado"
+   - Explicar impacto
+   - Fornecer guia de migração
+
+## Exemplos
+
+### README.md
+```markdown
+## Autenticação
+
+### Descrição
+Sistema de autenticação usando JWT.
+
+### Configuração
+```env
+JWT_SECRET=seu_segredo
+JWT_EXPIRATION=3600
+```
+
+### Uso
+```typescript
+const token = await authService.login(credentials);
+```
+
+### Exemplos
+- Login com email/senha
+- Refresh token
+- Logout
+```
+
+### CHANGELOG.md
+```markdown
+## [1.2.0] - 2024-03-20
+### Adicionado
+- Sistema de autenticação JWT (#123)
+- Endpoint de refresh token (#124)
+
+### Corrigido
+- Validação de email não funcionando (#125)
+```
+
+## Benefícios
+- Documentação sempre atualizada
+- Histórico claro de mudanças
+- Facilita onboarding de novos desenvolvedores
+- Melhora manutenibilidade do projeto
+- Ajuda na comunicação com stakeholders
+
