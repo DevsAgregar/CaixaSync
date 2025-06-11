@@ -40,11 +40,11 @@ def conta_bancaria(fp, filial):
         elif fp == "Transferência Pix":
             return "SICOOB"
         elif fp in ["Cartão de Débito VISA/ MASTER", "Cartão de Crédito VISA / MASTER"]:
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA PETROLINA"
         elif fp == "Cartão de Débito ELO":
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA PETROLINA"
         elif fp == "Cartão de Crédito ELO":
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA PETROLINA"
         
     elif filial == "Loja 2":
         if fp == "Dinheiro":
@@ -54,11 +54,11 @@ def conta_bancaria(fp, filial):
         elif fp == "PIx Instantâneo Bradesco LJ02":
             return "BRADESCO C/C"
         elif fp in ["Cartão de Débito VISA/ MASTER", "Cartão de Crédito VISA / MASTER"]:
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA SÃO FRANCISCO"
         elif fp == "Cartão de Débito ELO":
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA SÃO FRANCISCO"
         elif fp == "Cartão de Crédito ELO":
-            return "MAQUINETA ÚNICA"
+            return "MAQUINETA ÚNICA SÃO FRANCISCO"
     return ""
 
 def cruzar_planilhas_movimentacao(arquivo_formatado: str, arquivo_movimentacoes: str, pasta_saida: str) -> None:
