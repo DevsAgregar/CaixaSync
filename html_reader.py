@@ -12,7 +12,8 @@ class ProcessadorPlanilha:
         'Cartão de Crédito VISA / MASTER',
         'Cartão de Débito ELO',
         'Cartão de Crédito ELO',
-        'PIx Instantâneo Bradesco LJ02'
+        'PIx Instantâneo Bradesco LJ02',
+        'CHEQUE RECEBIDO'
     }
     
     TIPOS_OPERACAO = {'Entrada', 'Saída'}

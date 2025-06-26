@@ -45,6 +45,8 @@ def conta_bancaria(fp, filial):
             return "MAQUINETA ÚNICA PETROLINA"
         elif fp == "Cartão de Crédito ELO":
             return "MAQUINETA ÚNICA PETROLINA"
+        elif fp == "CHEQUE RECEBIDO":
+            return "Cheque"
         
     elif filial == "Loja 2":
         if fp == "Dinheiro":
@@ -59,6 +61,8 @@ def conta_bancaria(fp, filial):
             return "MAQUINETA ÚNICA SÃO FRANCISCO"
         elif fp == "Cartão de Crédito ELO":
             return "MAQUINETA ÚNICA SÃO FRANCISCO"
+        elif fp == "CHEQUE RECEBIDO":
+            return "Cheque"
     return ""
 
 def cruzar_planilhas_movimentacao(arquivo_formatado: str, arquivo_movimentacoes: str, pasta_saida: str) -> None:

@@ -10,7 +10,8 @@ build/
 *.egg
 
 # Arquivos do PyInstaller
-*.spec
+# Permitimos arquivos .spec específicos
+# *.spec
 
 # Arquivos de ambiente virtual
 venv/
